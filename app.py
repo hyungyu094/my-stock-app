@@ -10,7 +10,7 @@ import os
 # 페이지 설정 (모바일 최적화)
 st.set_page_config(
     page_title="망고의 롤댄스 주식",
-    page_icon="https://raw.githubusercontent.com/hyungyu094/my-stock-app/main/icon.png",
+    page_icon="https://raw.githubusercontent.com/hyungyu094/my-stock-app/main/icon.jpg",
     layout="wide"
     layout="centered",
     initial_sidebar_state="expanded"
