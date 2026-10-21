@@ -1,3 +1,22 @@
+Python
+import streamlit as st
+
+# 1. 기본 브라우저 탭 설정 (이모지는 백업용)
+st.set_page_config(
+    page_title="내 주식 앱",
+    page_icon="📈",
+    layout="wide"
+)
+
+# 2. 스마트폰 홈 화면에 추가할 때 내 이미지가 완벽하게 아이콘으로 잡히도록 하는 웹 표준 설정
+st.markdown("""
+    <link rel="apple-touch-icon" href="icon.jpg">
+    <link rel="icon" type="image/jpg" href="icon.jpg">
+""", unsafe_allow_html=True)
+
+# --- 여기에 원래 쓰시던 주식 앱 코드를 넣으시면 됩니다 ---
+st.title("망고의 롤댄스 주식")
+st.write("아이콘 적용 완료!")
 import streamlit as st
 import yfinance as yf
 import pandas as pd
@@ -10,7 +29,7 @@ import os
 # 페이지 설정 (모바일 최적화)
 st.set_page_config(
     page_title="망고의 롤댄스 주식",
-    page_icon="",
+    page_icon="icon.jpg",
     layout="wide"
     layout="centered",
     initial_sidebar_state="expanded"
