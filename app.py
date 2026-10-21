@@ -1,14 +1,4 @@
 import streamlit as st
-import os
-current_dir = os.path.dirname(os.path.abspath(__file__))
-icon_path = os.path.join(current_dir, "icon.jpg")  
-
-st.set_page_config(
-    page_title="망고의 롤댄스 주",
-    page_icon=icon_path,
-    layout="wide"
-)
-import streamlit as st
 import yfinance as yf
 import pandas as pd
 import requests
@@ -20,7 +10,7 @@ import os
 # 페이지 설정 (모바일 최적화)
 st.set_page_config(
     page_title="망고의 롤댄스 주식",
-    page_icon="icon.jpg",
+    page_icon="",
     layout="wide"
     layout="centered",
     initial_sidebar_state="expanded"
