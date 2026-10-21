@@ -7,10 +7,14 @@ import matplotlib.pyplot as plt
 import json
 import os
 
-# 페이지 설정 (모바일 최적화)
+# 현재 app.py 파일이 있는 위치에서 icon.jpg 위치를 안전하게 잡습니다
+current_dir = os.path.dirname(os.path.abspath(__file__))
+icon_path = os.path.join(current_dir, "icon.jpg")
+
+# 페이지 설정 (icon.jpg 적용)
 st.set_page_config(
     page_title="스마트 주식 분석기",
-    page_icon="📈",
+    page_icon=icon_path if os.path.exists(icon_path) else "📈",  # 파일이 있으면 icon.jpg 사용, 없으면 이모지 안전 백업
     layout="centered",
     initial_sidebar_state="expanded"
 )
