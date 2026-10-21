@@ -11,10 +11,11 @@ import os
 st.set_page_config(
     page_title="망고의 롤댄스 주식",
     page_icon="📈",
-    layout="wide"
     layout="centered",
     initial_sidebar_state="expanded"
 )
+
+
 # 한글 폰트 설정
 plt.rc('font', family='Malgun Gothic')
 plt.rc('axes', unicode_minus=False)
@@ -220,6 +221,10 @@ if target_query:
                     st.markdown(f"- [{title}]({link})")
             else:
                 st.write("관련 뉴스를 불러오지 못했습니다.")
+        else:
+            st.error("해당 종목의 데이터를 찾을 수 없습니다.")
+else:
+    st.info("👈 왼쪽 사이드바에서 추천 목록을 고르거나 종목을 검색해 주세요!")
         else:
             st.error("해당 종목의 데이터를 찾을 수 없습니다.")
 else:
