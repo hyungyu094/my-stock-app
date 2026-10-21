@@ -14,15 +14,6 @@ st.set_page_config(
     layout="centered",
     initial_sidebar_state="expanded"
 )
-        <!-- 아이폰 사파리 전용 홈 화면 아이콘 및 제목 -->
-        <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/hyungyu094/my-stock-app/main/icon.jpg">
-        <meta name="apple-mobile-web-app-title" content="망고의 롤댄스 주식">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        
-        <!-- 안드로이드 크롬 전용 파비콘/아이콘 -->
-        <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/hyungyu094/my-stock-app/main/icon.jpg">
-
 # 한글 폰트 설정
 plt.rc('font', family='Malgun Gothic')
 plt.rc('axes', unicode_minus=False)
