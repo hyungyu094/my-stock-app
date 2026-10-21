@@ -5,13 +5,13 @@ import matplotlib.pyplot as plt
 
 # 1. 페이지 기본 설정 (에러 방지용 안전 모드)
 st.set_page_config(
-    page_title="내 주식 앱",
+    page_title="망고의 롤댄스 주식",
     page_icon="📈",
     layout="wide"
 )
 
 # 2. 앱 제목
-st.title("📈 스마트 주식 분석기")
+st.title("📈 망고의 롤댄스 주식")
 st.write("안정적으로 실행되는 기본 주식 분석 화면입니다.")
 
 # 3. 간단한 주식 검색 및 차트 예시 기능
